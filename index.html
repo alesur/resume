@@ -188,18 +188,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <form id="pmform" method="post">
+        <form id="pmform" method="POST">
 			<label class="col-form-label">Name</label>
 				<input type="text" class="form-control" name="from_name"">
 			<label class="col-form-label">Email</label>
 				<input type="text" class="form-control" name="reply_to">
 			<label class="col-form-label">Message</label>
 			<textarea class="form-control" name="message_html"></textarea>
-			<script src="https://www.google.com/recaptcha/api.js"></script>
+			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 			<br></br>
 				<div class="g-recaptcha" data-sitekey="6LfEALwUAAAAAGnYTemA5CK2aKILGf4HWKZibJfT"></div>
 			<br></br>
 				<button class="btn btn-primary">Send</button>
+				<input type="submit" value="Submit">
 		</form>
 	
       </div>
